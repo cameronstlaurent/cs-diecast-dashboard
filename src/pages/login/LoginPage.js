@@ -1,4 +1,4 @@
- import React from 'react'
+import React from 'react'
 
 
  import {Link, useNavigate} from "react-router-dom"
@@ -19,24 +19,34 @@
     }
 
      return( 
-       <>
-        <nav>
-            <ul>
-                <li>
-                    <Link to="/">LoginPage</Link>
-                </li>
-                <li>
-                    <Link to="/dashboard">DashBoard Page</Link>
-                </li>
-            </ul>
-        </nav>
-        <header>
-            <h1>Login Page</h1>
-        </header>
-        <form onSubmit={onHandleSubmit}>
-            <input type="email" required />
-            <button type="submit">form submission</button>
-        </form>
+       <><nav>
+       <ul>
+           <li>
+               <Link to="/">LoginPage</Link>
+           </li>
+           <li>
+               <Link to="/dashboard">DashBoard Page</Link>
+           </li>
+       </ul>
+   </nav>
+            <div class="login-page">
+                <div class="login-container">
+                    <img src="images/car-img.png" alt="car" />
+                    <form onSubmit={onHandleSubmit}>
+                        <img class="logo" src="images/logo.png" alt="the CS Diecast logo" />
+                        <h2>Welcome to CS Diecast!</h2>
+                        <label for="email">Email</label>
+                        <input type="email" required />
+                        <label>Password</label>
+                        <input type="password" required />
+                        <button type="submit">Login</button>
+                        <div class="recovery-links">
+                            <a href="#">Recover Username</a>
+                            <a href="#">Recover Password</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </>
      )
      // temporal dead zone....
