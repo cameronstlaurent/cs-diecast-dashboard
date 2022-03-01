@@ -41,8 +41,8 @@ import React from 'react'
                         <input type="password" required />
                         <button type="submit">Login</button>
                         <div class="recovery-links">
-                            <a href="#">Recover Username</a>
-                            <a href="#">Recover Password</a>
+                            <Link to="/">Recover Username</Link>
+                            <Link to="/">Recover Password</Link>
                         </div>
                     </form>
                 </div>
