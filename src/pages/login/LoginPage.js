@@ -19,16 +19,7 @@ import React from 'react'
     }
 
      return( 
-       <><nav>
-       <ul>
-           <li>
-               <Link to="/">LoginPage</Link>
-           </li>
-           <li>
-               <Link to="/dashboard">DashBoard Page</Link>
-           </li>
-       </ul>
-   </nav>
+       <>
             <div class="login-page">
                 <div class="login-container">
                     <img src="images/car-img.png" alt="car" />

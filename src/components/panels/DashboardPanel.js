@@ -1,6 +1,6 @@
 import React from 'react'
-import { DashboardPanelHeading, DashboardPanelStyles, DashboardPanelText, DashboardPanelDisplay } from './styles'
-import {Button} from './../../ui/buttons'
+import { DashboardPanelHeading, DashboardPanelStyles, DashboardPanelText, DashboardPanelDisplay, DashboardPanelCard, DashboardPanelCardHeading,DashboardPanelCardContent, DashboardPanelCardPriceMake, DashboardPanelCardDescription} from './styles';
+import {Button} from './../../ui/buttons';
 
 function DashboardPanel  (props){
     return(
@@ -12,6 +12,19 @@ function DashboardPanel  (props){
                 <Button>Add Product</Button>
             </DashboardPanelHeading>
             <DashboardPanelDisplay>
+                <DashboardPanelCard>
+                <img height="200px;" width="100%;" class="logo" src="images/car-img.png" alt="the CS Diecast logo" />
+                    <DashboardPanelCardContent>
+                        <DashboardPanelCardHeading>
+                            Dastun 240z
+                        </DashboardPanelCardHeading>
+                        <DashboardPanelCardPriceMake>
+                            <p>Hot Wheels</p>
+                            <p>$30</p>
+                        </DashboardPanelCardPriceMake>
+                        <DashboardPanelCardDescription>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</DashboardPanelCardDescription>
+                    </DashboardPanelCardContent>
+                </DashboardPanelCard>
             </DashboardPanelDisplay>
         </DashboardPanelStyles>
     )

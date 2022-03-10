@@ -7,6 +7,7 @@
  import {AppBarStyles, AppBarItem, AppBarItems} from './styles'
  import {IconButton} from './../../ui/buttons'
  
+ 
  import {Link} from "react-router-dom"
  function AppBar  (props){
      return(
@@ -18,10 +19,10 @@
                 </Link>
               </AppBarItem>
               <AppBarItem>
-                <IconButton><FaUser color="#e12b38" size="1.75rem"/></IconButton>
-                <IconButton><MdEmail color="#e12b38" size="1.75rem"/></IconButton>
-                <IconButton><IoNotificationsOutline color="#e12b38" size="1.75rem"/></IconButton>
-                <IconButton><IoIosSettings color="#e12b38" size="1.75rem"/></IconButton>
+                <IconButton><FaUser color="#1e1e1e" size="2rem"/></IconButton>
+                <IconButton><MdEmail color="#1e1e1e" size="2rem"/></IconButton>
+                <IconButton><IoNotificationsOutline color="#1e1e1e" size="2rem"/></IconButton>
+                <IconButton><IoIosSettings color="#1e1e1e" size="2rem"/></IconButton>
               </AppBarItem>
           </AppBarItems>
        </AppBarStyles>
