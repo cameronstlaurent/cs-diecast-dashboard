@@ -1,6 +1,8 @@
 import React from 'react'
 import {SideBarStyles, SideBarItem, 
     SideBarItems, DashboardItem} from './styles'
+/* icons */
+import {Link} from "react-router-dom"
 import {AiOutlineDashboard} from "react-icons/ai"
 import {FaUser} from "react-icons/fa"
 import {FaUsers} from "react-icons/fa"
@@ -15,7 +17,7 @@ import {ImRocket} from "react-icons/im"
 import {AiFillDollarCircle} from "react-icons/ai"
 import {AiFillTags} from "react-icons/ai"
 import {ImExit} from "react-icons/im"
-import {Link} from "react-router-dom"
+
 function SideBar  (props){
     return(
     <SideBarStyles>

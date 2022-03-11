@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const DashboardPanelStyles = styled.div`
     margin: 5rem auto;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1365px;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow:  0 0 2px 1px grey;
@@ -30,13 +30,15 @@ const DashboardPanelDisplay = styled.div`
 
 const DashboardPanelText = styled.h2`
     font-size: 3rem;
+    font-weight: bold;
 `
 
 const DashboardPanelCard = styled.div`
     box-shadow:  0 0 2px 1px grey;
     width: 31rem;
-    margin-right: 3rem; 
-    margin-top: 2rem;
+    // margin-right: 3rem; 
+    // margin-top: 2rem;
+    margin: 1rem 1rem;
     border-radius: 8px;
 `
 
@@ -47,6 +49,7 @@ const DashboardPanelCardContent = styled.div`
 const DashboardPanelCardHeading = styled.h3`
     font-size: 3rem;
     text-align: center;
+    font-weight: bold;
 `
 
 const DashboardPanelCardPriceMake = styled.div`
@@ -59,6 +62,7 @@ const DashboardPanelCardPriceMake = styled.div`
 
 const DashboardPanelCardDescription = styled.p`
     font-size: 1.6rem;
+    padding-top 1rem;
 `
 
 export {DashboardPanelStyles, DashboardPanelHeading, DashboardPanelText, DashboardPanelDisplay, DashboardPanelCard, DashboardPanelCardContent, DashboardPanelCardHeading, DashboardPanelCardPriceMake, DashboardPanelCardDescription}

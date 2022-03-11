@@ -5,7 +5,7 @@ const SideBarStyles   = styled.nav`
     width: 28.9rem;
     height: 100%;
     background-color: #ffffff;
-    height: calc(100vh - 80px)
+    height: calc(100vh - 79px)
 `;
 
  const SideBarItems = styled.ul`

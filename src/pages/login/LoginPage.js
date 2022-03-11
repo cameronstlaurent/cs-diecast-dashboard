@@ -22,9 +22,9 @@ import React from 'react'
        <>
             <div class="login-page">
                 <div class="login-container">
-                    <img src="images/car-img.png" alt="car" />
+                    <img src="images/car-img.png" alt="CS Diecast garage" />
                     <form onSubmit={onHandleSubmit}>
-                        <img class="logo" src="images/logo.png" alt="the CS Diecast logo" />
+                        <img class="logo" src="images/logo.svg" alt="the CS Diecast logo" />
                         <h2>Welcome to CS Diecast!</h2>
                         <label for="email">Email</label>
                         <input type="email" required />

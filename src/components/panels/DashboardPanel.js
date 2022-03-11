@@ -1,5 +1,7 @@
 import React from 'react'
+
 import { DashboardPanelHeading, DashboardPanelStyles, DashboardPanelText, DashboardPanelDisplay, DashboardPanelCard, DashboardPanelCardHeading,DashboardPanelCardContent, DashboardPanelCardPriceMake, DashboardPanelCardDescription} from './styles';
+
 import {Button} from './../../ui/buttons';
 
 function DashboardPanel  (props){
@@ -13,16 +15,16 @@ function DashboardPanel  (props){
             </DashboardPanelHeading>
             <DashboardPanelDisplay>
                 <DashboardPanelCard>
-                <img height="200px;" width="100%;" class="logo" src="images/car-img.png" alt="the CS Diecast logo" />
+                    <img class="card-img" src="images/240z.jpg" alt="the CS Diecast logo" />
                     <DashboardPanelCardContent>
-                        <DashboardPanelCardHeading>
+                    <DashboardPanelCardHeading>
                             Dastun 240z
-                        </DashboardPanelCardHeading>
-                        <DashboardPanelCardPriceMake>
+                    </DashboardPanelCardHeading>
+                    <DashboardPanelCardPriceMake>
                             <p>Hot Wheels</p>
                             <p>$30</p>
-                        </DashboardPanelCardPriceMake>
-                        <DashboardPanelCardDescription>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</DashboardPanelCardDescription>
+                    </DashboardPanelCardPriceMake>
+                    <DashboardPanelCardDescription>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</DashboardPanelCardDescription>
                     </DashboardPanelCardContent>
                 </DashboardPanelCard>
             </DashboardPanelDisplay>

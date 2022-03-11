@@ -10,9 +10,7 @@ html {
     margin-right: 0.5rem;
 }
 
-img {
-    border-radius: 4px;
-}
+/* basic login styling */
 
 .login-page {
     padding-top: 15vh;
@@ -37,6 +35,7 @@ img {
 .logo {
     display: flex;
     margin: auto;
+    widtH: 10rem;
 }
 
 .dashboard-panel.flex-container {
@@ -92,4 +91,12 @@ form > button {
 
 form > input[type="email"] {
     margin-bottom: 1rem;
+}
+
+/*dashboard */
+.card-img {
+    border-radius: 4px 4px 0px 0px;
+    height:20rem;
+    width: 100%; 
+    object-fit: cover;
 }
