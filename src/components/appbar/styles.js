@@ -2,23 +2,18 @@ import styled from 'styled-components';
 
 const AppBarStyles   = styled.nav`
     box-shadow:  0 0 2px 1px grey;
-    position: relative;
-    padding: 1.175rem;  
+    padding: 0.5rem 6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;   
 `;
 
 const AppBarItems = styled.ul`
-   display:flex;
-   justify-content: space-between;
-   align-items:center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 `;
 
 const AppBarItem = styled.li`
-    
 `
 
-const AppBarItemGroup = styled.li`
-    display: flex;
-    gap: 0.25rem;
-`
-
-export {AppBarStyles, AppBarItem, AppBarItems, AppBarItemGroup}
+export {AppBarStyles, AppBarItem, AppBarItems}

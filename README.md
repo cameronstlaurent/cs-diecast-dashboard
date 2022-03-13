@@ -1,23 +1,16 @@
-# React Starter Kit
+# CS Diecast Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+CS Diecast design and build done by Cameron St. Laurent. Not much to do here yet but there will be soon! Some details on what you can do right now is provided below. 
 
-# Scripts
+# Technology used
+This dashboard was built using the react framework. Utilizes redirects, style components and vanilla CSS to create the styling of the page(s). This project is hosted on Netlify where it will be updated with new features, so stay tuned! 
 
-__Development Build__ 
-> ```npm start``` 
-> Run the following command from your terminal. 
-> Starts development server automatically.  
-> Open browser to  [http://localhost:3000](http://localhost:3000)  
-> project. 
+# How it works
+When you provide login credidentials on the login page you will be brought to the dashboard where you can add products to the storefront. If you type in a wrong address you will be brought to a 404 page. Ex: cs-diecast-dashboard.netify.app/tokyo_drift. Clicking the sign out button at the bottom of the side bar will take you back to the login page. 
 
- 
- __Production Build__ 
-> ```npm run build``` 
-> Builds the app for production. 
-> Optimizes the build for the best performance.  
-> Open browser to  [http://localhost:3000](http://localhost:3000)  
-> For more information on [deployments](https://facebook.github.io/create-react-app/docs/deployment). 
+
+## Licensing 
+All content used in this project is for educational purposes only. the only asset I own is the image on the login page. 
 
  
 

@@ -23,75 +23,75 @@ function SideBar  (props){
     <SideBarStyles>
         <SideBarItems>
             <DashboardItem>
-            <AiOutlineDashboard class="icon" size="1.75rem"/>Dashboard
+            <AiOutlineDashboard className="icon" size="1.75rem"/>Dashboard
             </DashboardItem>
         </SideBarItems>
         <SideBarItems>
         <SideBarItem>
             <Link to="/dashboard">
-            <FaUser class="icon" size="1.75rem"/>Vendors
+            <FaUser className="icon" size="1.75rem"/>Vendors
             </Link>
             </SideBarItem>
             <SideBarItem>
             <Link to="/dashboard">
-            <FaUsers class="icon" size="1.75rem"/>Users
+            <FaUsers className="icon" size="1.75rem"/>Users
             </Link>
             </SideBarItem>
         </SideBarItems>
         <SideBarItems>
             <SideBarItem>
             <Link to="/dashboard">
-            <IoStarHalf class="icon" size="1.75rem"/>Reviews
+            <IoStarHalf className="icon" size="1.75rem"/>Reviews
             </Link>
             </SideBarItem>
             <SideBarItem>
             <Link to="/dashboard">
-            <FaShoppingCart class="icon" size="1.75rem"/>Orders
+            <FaShoppingCart className="icon" size="1.75rem"/>Orders
             </Link>
             </SideBarItem>
             <SideBarItem>
             <Link to="/dashboard">
-            <ImBooks class="icon" size="1.75rem"/>Categories
+            <ImBooks className="icon" size="1.75rem"/>Categories
             </Link>
             </SideBarItem>
             <SideBarItem>
             <Link to="/dashboard">
-            <AiFillTag class="icon" size="1.75rem"/>Brands
+            <AiFillTag className="icon" size="1.75rem"/>Brands
             </Link>
             </SideBarItem>
             <SideBarItem>
             <Link to="/dashboard">
-            <GiPresent class="icon" size="1.75rem"/>Products
+            <GiPresent className="icon" size="1.75rem"/>Products
             </Link>
             </SideBarItem>
             <SideBarItem>
             <Link to="/dashboard">
-            <BsFillCreditCard2BackFill class="icon" size="1.75rem"/>Payments
+            <BsFillCreditCard2BackFill className="icon" size="1.75rem"/>Payments
             </Link>
             </SideBarItem>
             <SideBarItem>
             <Link to="/dashboard">
-                <AiFillTrophy class="icon" size="1.75rem"/>Best Sellers
+                <AiFillTrophy className="icon" size="1.75rem"/>Best Sellers
             </Link>
             </SideBarItem>
             <SideBarItem>
             <Link to="/dashboard">
-            <ImRocket class="icon" size ="1.75rem"/>Shipments
+            <ImRocket className="icon" size ="1.75rem"/>Shipments
             </Link>
             </SideBarItem>
             <SideBarItem>
             <Link to="/dashboard">
-            <AiFillDollarCircle class="icon" size ="1.75rem"/>Pricing
+            <AiFillDollarCircle className="icon" size ="1.75rem"/>Pricing
             </Link>
             </SideBarItem>
             <SideBarItem>
             <Link to="/dashboard">
-                <AiFillTags class="icon" size="1.75rem"/>Promotions
+                <AiFillTags className="icon" size="1.75rem"/>Promotions
             </Link>
             </SideBarItem>
         <SideBarItem>
             <Link to="/">
-                <ImExit class="icon" size="1.75rem"/>Sign Out
+                <ImExit className="icon" size="1.75rem"/>Sign Out
             </Link>
             </SideBarItem>
         </SideBarItems>

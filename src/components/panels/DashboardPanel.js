@@ -15,7 +15,7 @@ function DashboardPanel  (props){
             </DashboardPanelHeading>
             <DashboardPanelDisplay>
                 <DashboardPanelCard>
-                    <img class="card-img" src="images/240z.jpg" alt="the CS Diecast logo" />
+                    <img className="card-img" src="images/240z.jpg" alt="the CS Diecast logo" />
                     <DashboardPanelCardContent>
                     <DashboardPanelCardHeading>
                             Dastun 240z

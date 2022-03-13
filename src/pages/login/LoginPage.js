@@ -1,76 +1,45 @@
-import React, {useState} from 'react';
-import { useNavigate } from "react-router-dom";
+import React from 'react'
 
-import {BiMessageSquareError} from 'react-icons/bi';
-import {signInWithEmailAndPassword} from "firebase/auth";
-import {ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+ import {Link, useNavigate} from "react-router-dom"
 
-import {auth} from 'libs/firebase';
-import { LoginPageStyles, FormControl } from './styles';
-import { Label } from 'ui/forms';
-import { Input } from 'ui/forms';
-import { SubmitButton } from 'ui/buttons';
+ 
+ function LoginPage  (props){
+    // window.location.assign('page.html')
+    // router navigate to a path ( /home/index dashboard)
+    let navigation = useNavigate();
 
-function LoginPage(props) {
-    
-    // start with state declarations
-    const navigator = useNavigate()
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-
-    const notify = (error) => toast.error(error.code,{
-        position: "top-center",
-        autoClose: 3000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        icon:<BiMessageSquareError/>
-  
-    });
-
-    function onHandleSignIn(e) {
+    function onHandleSubmit(e){
         e.preventDefault();
-        signInWithEmailAndPassword(auth, email, password)
-        .then(userCrediental=>{
-            // move dashboard page
-            // useNavigate() react router
-            navigator("dashboard")
-        })
-        .catch(error=>{
-            
-            notify(error)
-        })
+        navigation('dashboard')
+        // firebase auth signInWithUsernameAndPassword({email, password})
+        // true or error
+        // try again
+        // true the navigate to the dashboard
     }
-    // console.log(auth)
-    return(
-    <LoginPageStyles>
-        <ToastContainer/>
-        <header>
-            <h1>Welcome Please Login In</h1>
-        </header>
-        <form onSubmit={onHandleSignIn}>
-            <FormControl>
-                <Label>Email</Label>
-                <Input type="text" placeholder="janedoe@gmail.com" onChange={(e)=> setEmail(e.target.value)} />
-            </FormControl>
-            <FormControl>
-                <Label>Password</Label>
-                <Input type="text" placeholder="account password" onChange={(e)=> setPassword(e.target.value)}/>
-            </FormControl>
-            <FormControl>
-            <SubmitButton>
-                Sign into dashboard
-            </SubmitButton>
-            </FormControl>
-        </form>
-    </LoginPageStyles>
-    
-    )
-    
-    }
+
+     return( 
+       <>
+            <div className="login-page">
+                <div className="login-container">
+                    <img src="images/car-img.png" alt="CS Diecast garage" />
+                    <form onSubmit={onHandleSubmit}>
+                        <img className="logo" src="images/logo.svg" alt="the CS Diecast logo" />
+                        <h2>Welcome to CS Diecast!</h2>
+                        <label for="email">Email</label>
+                        <input type="email" required />
+                        <label>Password</label>
+                        <input type="password" required />
+                        <button type="submit">Login</button>
+                        <div className="recovery-links">
+                            <Link to="/">Recover Username</Link>
+                            <Link to="/">Recover Password</Link>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </>
+     )
+     // temporal dead zone....
+ }
  
  export default LoginPage 
-
