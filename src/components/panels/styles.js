@@ -1,68 +1,26 @@
 import styled from 'styled-components';
 
-const DashboardPanelStyles = styled.div`
-    margin: 5rem auto;
-    width: 100%;
-    max-width: 1365px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow:  0 0 2px 1px grey;
+const PanelStyles = styled.section`
+flex: 1;
+box-shadow: 0 0 2px 0 rgba(0,0,0,0.3);
+background-color: white;
+border-radius: 3px;
+margin: 1.5rem;
 `;
 
-const DashboardPanelHeading = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    border-radius: 8px 8px 0px 0px;
-    background-color: rgba(0,0,0,0.05);
-    
+const PanelHeader = styled.header`
+    h2 {
+        background-color: #f8f8f8;
+        padding: 0.5rem;
+        border-radius: 3px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        color: #3f3f3f;
+    }
 `;
 
-const DashboardPanelDisplay = styled.div`
-    border-radius: 0px 0px 8px 8px;
-    border-top: none;
-    margin: 2rem;
-    display: flex;
-    flex-wrap: wrap;
+const PanelBody = styled.div`
+    margin: ${props => props.margin || "3rem"};
 `;
 
-
-const DashboardPanelText = styled.h2`
-    font-size: 3rem;
-    font-weight: bold;
-`
-
-const DashboardPanelCard = styled.div`
-    box-shadow:  0 0 2px 1px grey;
-    width: 31rem;
-    // margin-right: 3rem; 
-    // margin-top: 2rem;
-    margin: 1rem 1rem;
-    border-radius: 8px;
-`
-
-const DashboardPanelCardContent = styled.div`
-    padding: 2rem 3rem;
-`
-
-const DashboardPanelCardHeading = styled.h3`
-    font-size: 3rem;
-    text-align: center;
-    font-weight: bold;
-`
-
-const DashboardPanelCardPriceMake = styled.div`
-    display: flex;
-    justify-content:space-between;
-    padding: 1rem 0;
-    font-size: 2rem;
-    border-bottom: 1px solid gray;
-`
-
-const DashboardPanelCardDescription = styled.p`
-    font-size: 1.6rem;
-    padding-top 1rem;
-`
-
-export {DashboardPanelStyles, DashboardPanelHeading, DashboardPanelText, DashboardPanelDisplay, DashboardPanelCard, DashboardPanelCardContent, DashboardPanelCardHeading, DashboardPanelCardPriceMake, DashboardPanelCardDescription}
+export {PanelStyles, PanelBody, PanelHeader}
