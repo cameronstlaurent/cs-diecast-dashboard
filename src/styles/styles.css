@@ -49,6 +49,17 @@ html {
     margin-top: 0.5rem;
 }
 /*form styles*/
+/*toast message styles */
+.Toastify__toast {
+    background-color: red;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.Toastify__progress-bar--error {
+    background-color: #7d0c2c;
+}
+
 form {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -91,12 +102,4 @@ form > button {
 
 form > input[type="email"] {
     margin-bottom: 1rem;
-}
-
-/*dashboard */
-.card-img {
-    border-radius: 4px 4px 0px 0px;
-    height:20rem;
-    width: 100%; 
-    object-fit: cover;
 }

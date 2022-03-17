@@ -1,18 +1,19 @@
-import React from "react";
+import React from 'react'
 
-import {PanelStyles, PanelBody, PanelHeader} from './styles'
+import { DashboardPanelHeading, DashboardPanelStyles, DashboardPanelDisplay} from './styles';
+import {AddProduct} from 'components/products/widgets/AddProduct';
 
-function AddProductPanel({title, ...props}) {
-    return (
-        <PanelStyles>
-            <PanelHeader>
-                <h2>{title || "Display Panel"}</h2>
-            </PanelHeader>
-            <PanelBody>
-
-            </PanelBody>
-        </PanelStyles>
-    );
+function AddProductPanel(title, ...props){
+    return(
+        <DashboardPanelStyles>
+            <DashboardPanelHeading>
+                <h2>Add a Product</h2>
+            </DashboardPanelHeading>
+            <DashboardPanelDisplay>
+                <AddProduct/>
+            </DashboardPanelDisplay>
+        </DashboardPanelStyles>
+    )
 }
 
-export default AddProductPanel;
+export default AddProductPanel

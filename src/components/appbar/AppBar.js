@@ -1,5 +1,6 @@
  import React from 'react'
  import {AppBarStyles, AppBarItem, AppBarItems} from './styles'
+ import BrandingTwo from 'assets/images/logo2.svg'
 
  import {IoNotificationsOutline} from "react-icons/io5"
  import {IoIosSettings} from "react-icons/io"
@@ -15,7 +16,7 @@
           <AppBarItems>
               <AppBarItem>
                 <Link to="/dashboard">
-                  <img width="80px;" src="images/logo.svg" alt="car"/>
+                  <img width="200px;" height="80px;" src={BrandingTwo} alt="car"/>
                 </Link>
               </AppBarItem>
               <AppBarItem>

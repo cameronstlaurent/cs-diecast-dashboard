@@ -10,7 +10,11 @@ const Input = styled.input`
     border:none;
     border-radius: 2px;
     box-shadow: 0 0 2px 1px rgba(0,0,0,0.19);
+<<<<<<< HEAD
+    font-size:1.6rem;
+=======
     font-size:1.125rem;
+>>>>>>> 20d4a997f4292329a01c0d69e9dfff426d03c5b4
     padding: 0.35rem 0.5rem;
 
     ::placeholder{

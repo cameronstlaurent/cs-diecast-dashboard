@@ -5,7 +5,7 @@ const SideBarStyles   = styled.nav`
     width: 28.9rem;
     height: 100%;
     background-color: #ffffff;
-    height: calc(100vh - 79px)
+    height:calc(100vh - 77px)
 `;
 
  const SideBarItems = styled.ul`
@@ -25,8 +25,8 @@ const SideBarItem = styled.li`
     align-items: center;
     font-size: 1.75rem;
     padding-left: 6rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     &:nth-child(1){
         border-top: 1px solid gray;
     }
@@ -34,6 +34,7 @@ const SideBarItem = styled.li`
         border-top: 1px solid gray;
     }
  `
+ 
 
 
 

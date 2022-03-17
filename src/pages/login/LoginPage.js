@@ -1,34 +1,57 @@
-import React from 'react'
-
- import {Link, useNavigate} from "react-router-dom"
+import React, {useState} from 'react';
+import {useNavigate} from "react-router-dom";
+import {BiMessageSquareError} from 'react-icons/bi';
+import {signInWithEmailAndPassword} from "firebase/auth";
+import {ToastContainer, toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import {auth} from './../../libs/firebase';
+import {Link} from "react-router-dom";
+import Branding from 'assets/images/logo.svg';
 
  
  function LoginPage  (props){
-    // window.location.assign('page.html')
-    // router navigate to a path ( /home/index dashboard)
-    let navigation = useNavigate();
+        const navigator = useNavigate();
+        const [email, setEmail] = useState('');
+        const [password, setPassword] = useState('');
 
-    function onHandleSubmit(e){
-        e.preventDefault();
-        navigation('dashboard')
-        // firebase auth signInWithUsernameAndPassword({email, password})
-        // true or error
-        // try again
-        // true the navigate to the dashboard
+        const notify = (error) => toast.error(error.code,{
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            CloseOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            icon:<BiMessageSquareError/>
+        });
+
+        function onHandleSignIn(e){
+            e.preventDefault();
+            signInWithEmailAndPassword(auth, email, password)
+            .then(userCrediental=>{
+                //move dashboard page
+                // useNavigate() react router
+                navigator('dashboard')
+                console.log(userCrediental)
+            })
+            .catch(error=>{
+                notify(error)
+            })
     }
 
      return( 
        <>
             <div className="login-page">
+                <ToastContainer/>
                 <div className="login-container">
                     <img src="images/car-img.png" alt="CS Diecast garage" />
-                    <form onSubmit={onHandleSubmit}>
-                        <img className="logo" src="images/logo.svg" alt="the CS Diecast logo" />
+                    <form onSubmit={onHandleSignIn}>
+                        <img className="logo" src={Branding} alt="the CS Diecast logo" />
                         <h2>Welcome to CS Diecast!</h2>
                         <label for="email">Email</label>
-                        <input type="email" required />
+                        <input type="email" onChange={(e)=> setEmail(e.target.value)} />
                         <label>Password</label>
-                        <input type="password" required />
+                        <input type="password" onChange={(e)=> setPassword(e.target.value)} />
                         <button type="submit">Login</button>
                         <div className="recovery-links">
                             <Link to="/">Recover Username</Link>

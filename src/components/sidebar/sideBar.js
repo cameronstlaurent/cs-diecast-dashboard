@@ -3,6 +3,8 @@ import {SideBarStyles, SideBarItem,
     SideBarItems, DashboardItem} from './styles'
 /* icons */
 import {Link} from "react-router-dom"
+import {signOut} from 'firebase/auth'
+import {auth} from 'libs/firebase'
 import {AiOutlineDashboard} from "react-icons/ai"
 import {FaUser} from "react-icons/fa"
 import {FaUsers} from "react-icons/fa"
@@ -17,8 +19,13 @@ import {ImRocket} from "react-icons/im"
 import {AiFillDollarCircle} from "react-icons/ai"
 import {AiFillTags} from "react-icons/ai"
 import {ImExit} from "react-icons/im"
+import ProductOptions from './ProductOptions'
 
 function SideBar  (props){
+
+    function onLogoutRequest(e) {
+        signOut(auth)
+    }
     return(
     <SideBarStyles>
         <SideBarItems>
@@ -26,15 +33,16 @@ function SideBar  (props){
             <AiOutlineDashboard className="icon" size="1.75rem"/>Dashboard
             </DashboardItem>
         </SideBarItems>
+        <ProductOptions/>
         <SideBarItems>
         <SideBarItem>
             <Link to="/dashboard">
-            <FaUser className="icon" size="1.75rem"/>Vendors
+            <FaUser className="icon" size="1.75rem"/>Users
             </Link>
             </SideBarItem>
             <SideBarItem>
             <Link to="/dashboard">
-            <FaUsers className="icon" size="1.75rem"/>Users
+            <FaUsers className="icon" size="1.75rem"/>Vendors
             </Link>
             </SideBarItem>
         </SideBarItems>
@@ -90,7 +98,7 @@ function SideBar  (props){
             </Link>
             </SideBarItem>
         <SideBarItem>
-            <Link to="/">
+            <Link onClick={onLogoutRequest} to="/">
                 <ImExit className="icon" size="1.75rem"/>Sign Out
             </Link>
             </SideBarItem>
