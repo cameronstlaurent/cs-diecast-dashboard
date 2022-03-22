@@ -22,12 +22,14 @@ function PageNotFound  (props){
         <>
            <aside>
                <FourOhFourPageStyles>
+                   <div class="inner-container">
                    <img className="logo" src={Branding} alt="CS Diecast Logo"/>
                    <img className="four-oh-four" src={FourOhFourSvg} alt="error code 404"/>
                    <p>It appears that this page was too fast and too furious to be found.</p>
                    {
                        isUser? <Link to='/dashboard'><Button>back to safety</Button></Link> : <Link to='/'><Button>back to safety</Button></Link>
                    }
+                   </div>
                </FourOhFourPageStyles>
            </aside>
         </>

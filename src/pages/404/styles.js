@@ -4,11 +4,18 @@ const FourOhFourPageStyles = styled.section`
     height: 100vh;
     min-height: 800px;
     background-color: rgba(0,0,0,0.05);
-    padding-top: 15vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+    .inner-container {
+        padding: 1rem;
+    }
 
     .logo {
         width: 20rem;
         padding-bottom: 3rem;
+        margin: auto;
+        display: block;
     }
     .four-oh-four {
         width: 50rem;    
@@ -18,10 +25,12 @@ const FourOhFourPageStyles = styled.section`
     a {
         display: flex;
         justify-content: center;
+    }
+    a:hover {
         text-decoration: none;
     }
     p {
-        font-size: 3rem;
+        font-size: 2.4rem;
         font-weight: bold;
         padding-bottom: 3rem;
         color: #1e1e1e;

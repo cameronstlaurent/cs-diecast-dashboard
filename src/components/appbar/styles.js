@@ -2,9 +2,7 @@ import styled from 'styled-components';
 
 const AppBarStyles   = styled.nav`
     box-shadow:  0 0 2px 1px grey;
-    padding: 0.5rem 6rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;   
+    padding: 1rem 3rem;
 `;
 
 const AppBarItems = styled.ul`

@@ -15,6 +15,7 @@ function AllProductsPanel  (title, ...props){
                 <ProductCard/>
                 <ProductCard/>
                 <ProductCard/>
+                <ProductCard/>
             </DashboardPanelDisplay>
         </DashboardPanelStyles>
     )

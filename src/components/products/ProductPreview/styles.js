@@ -4,45 +4,42 @@ import styled from 'styled-components';
 
 const ProductPreviewStyles  = styled.aside`
       /* styles */
-      max-width: 360px;
-      align-self: stretch;
-      padding: 3rem 2rem;
-      background-color: #f8fafc;
+     box-shadow:  0 0 2px 1px grey;
+     width: 31rem;
+     border-radius: 4px;
+     background-color: #e5e7eb;
 `;
 
 const ProductName = styled.h2`
-     font-wieght:700;
-     font-size:2.25rem;
-     line-height:2.5rem;
-     letter-spacing: -0.5px;
-     color: #1e293b;
-     word-wrap: break-word;
+     font-weight:700;
+     font-size:3rem;
 `;
+
+const ProductPreviewContent = styled.div`
+          padding: 2rem 3rem;
+`
 
 
 const ProductImage = styled.div`
      display: block;
-     margin: 1rem auto;
-     width: 300px;
      img {
-          width: 100%;
-          height: auto;
+          border-radius: 4px 4px 0px 0px;
+          height:20rem;
+          width: 100%; 
+          object-fit: cover;
      }
 `;
 
 
-const ProductPrice = styled.p`
-     font-size: 2rem;
-     font-weight: 100;
-     letter-spacing: -1px;
-     color: #64748b;
-     margin-top: -0.3rem;
-     margin-bottom: 0.25rem;
+const ProductPrice = styled.h4`
+     font-size: 2.4rem;
+     font-weight: 600;
 `;
 
 const ProductDescription = styled.p`
      font-size: 1.6rem;
-     color: #94a3b8;
+     color: #1e1e1e;
+     padding-top 1rem;
 `
 
-export {ProductPreviewStyles, ProductImage, ProductName, ProductPrice, ProductDescription}
+export {ProductPreviewStyles, ProductImage, ProductName, ProductPrice, ProductDescription, ProductPreviewContent}

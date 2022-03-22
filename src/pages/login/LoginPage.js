@@ -7,6 +7,10 @@ import 'react-toastify/dist/ReactToastify.css';
 import {auth} from './../../libs/firebase';
 import {Link} from "react-router-dom";
 import Branding from 'assets/images/logo.svg';
+import {LoginPageStyles, FormControl} from './styles';
+import { Label } from 'ui/forms';
+import { Input } from 'ui/forms';
+import { SubmitButton } from 'ui/buttons';
 
  
  function LoginPage  (props){
@@ -41,25 +45,34 @@ import Branding from 'assets/images/logo.svg';
 
      return( 
        <>
-            <div className="login-page">
+            <LoginPageStyles>
                 <ToastContainer/>
-                <div className="login-container">
-                    <img src="images/car-img.png" alt="CS Diecast garage" />
-                    <form onSubmit={onHandleSignIn}>
-                        <img className="logo" src={Branding} alt="the CS Diecast logo" />
-                        <h2>Welcome to CS Diecast!</h2>
-                        <label for="email">Email</label>
-                        <input type="email" onChange={(e)=> setEmail(e.target.value)} />
-                        <label>Password</label>
-                        <input type="password" onChange={(e)=> setPassword(e.target.value)} />
-                        <button type="submit">Login</button>
-                        <div className="recovery-links">
-                            <Link to="/">Recover Username</Link>
-                            <Link to="/">Recover Password</Link>
-                        </div>
-                    </form>
+                <form onSubmit={onHandleSignIn}>
+                <div className="login-branding">
+                <img className="logo" src={Branding} alt="the CS Diecast logo" />
                 </div>
-            </div>
+                <div className="login-form-container">
+                <h1>Welcome to CS Diescast!</h1>
+                <FormControl>
+                    <Label>Email</Label>
+                    <Input type="text" placeholder="janedoe@gmail.com" onChange={(e)=> setEmail(e.target.value)} />
+                </FormControl>
+                <FormControl>
+                    <Label>Password</Label>
+                    <Input type="password" placeholder="account password" onChange={(e)=> setPassword(e.target.value)}/>
+                </FormControl>
+                <FormControl>
+                <SubmitButton>
+                Sign In
+                </SubmitButton>
+                <div className="recovery-links">
+                <Link to="#">Recover Password</Link>
+                <Link to="#">Recover Username</Link>
+                </div>
+                </FormControl>
+                </div>
+                </form>
+            </LoginPageStyles>
         </>
      )
      // temporal dead zone....

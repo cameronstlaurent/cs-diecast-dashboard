@@ -32,7 +32,7 @@ const getColor = (props) => {
     font-size:14px;
     margin-bottom: 1rem;
     :hover{
-      border-color: cornflowerblue;
+      border-color: #e12b38;
       background-color: #eff6ff;
     }
   `;
