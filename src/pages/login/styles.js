@@ -13,8 +13,9 @@ const LoginPageStyles = styled.section`
 
    form {
     padding: 3rem 1rem;
-    background-color: lightgray;
+    background-color: #f3f4f6;
     border-radius: 8px;
+    box-shadow:  0 0 2px 1px grey;
    }
   
 

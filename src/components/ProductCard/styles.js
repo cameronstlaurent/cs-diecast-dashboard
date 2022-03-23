@@ -6,7 +6,7 @@ const ProductCardStyles = styled.div`
     box-shadow:  0 0 2px 1px grey;
     width: 31rem;
     border-radius: 4px;
-    background-color: #e5e7eb;
+    background-color: #f3f4f6;
     .card-img {
         border-radius: 4px 4px 0px 0px;
         height:20rem;
