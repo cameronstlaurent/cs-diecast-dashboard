@@ -8,6 +8,10 @@ const ProductPreviewStyles  = styled.aside`
      width: 31rem;
      border-radius: 4px;
      background-color: #e5e7eb;
+     h4 {
+          font-size: 2.4rem;
+          font-weight: 600;
+     }
 `;
 
 const ProductName = styled.h2`
@@ -36,10 +40,16 @@ const ProductPrice = styled.h4`
      font-weight: 600;
 `;
 
+const ProductBrand = styled.h4`
+     font-size: 2.4rem;
+     font-weight: 600;
+     word-wrap: break-word;
+`;
+
 const ProductDescription = styled.p`
      font-size: 1.6rem;
      color: #1e1e1e;
      padding-top 1rem;
 `
 
-export {ProductPreviewStyles, ProductImage, ProductName, ProductPrice, ProductDescription, ProductPreviewContent}
+export {ProductPreviewStyles, ProductImage, ProductName, ProductPrice, ProductBrand, ProductDescription, ProductPreviewContent}

@@ -1,12 +1,12 @@
 import React from 'react';
 
-import {ProductDataEntryFormStyles, ProductImage, ProductDescription, ProductName, ProductPrice} from './styles';
+import {ProductDataEntryFormStyles, ProductImage, ProductDescription, ProductName, ProductPrice, ProductBrand} from './styles';
 import {Label, Input} from 'ui/forms';
 import {TextArea} from 'ui/forms/textarea';
 import {ProductImageDropBox} from '../ProductImageDropBox';
 import {SubmitButton} from 'ui/buttons';
 
-function ProductDataEntryForm ({children, handleProductName, handleProductPrice, handleProductDescription, handleSubmit, setProductImage, ...props})  {
+function ProductDataEntryForm ({children, handleProductName, handleProductBrand, handleProductPrice, handleProductDescription, handleSubmit, setProductImage, ...props})  {
   return (
         <ProductDataEntryFormStyles  {...props} onSubmit={handleSubmit}>
            <ProductImage>
@@ -24,6 +24,11 @@ function ProductDataEntryForm ({children, handleProductName, handleProductPrice,
               <Input onChange={(e)=>handleProductPrice(e.target.value.trim())} maxLength={8}/>
            </ProductPrice>
            </fieldset>
+
+           <ProductBrand>
+           <Label>Product Brand</Label>
+           <Input onChange={(e)=>handleProductBrand(e.target.value.trim())} maxLength={30}/>
+           </ProductBrand>
               
            <ProductDescription>
               <Label>Product Description</Label>

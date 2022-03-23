@@ -7,7 +7,6 @@ function useAddNewProduct(){
     const [loading, setLoading] = useState(false)
 
     const productLoader = async function(productData, imageFile) {
-
         setLoading(true);
         const newRef = await push(ref(db, 'products'))
 

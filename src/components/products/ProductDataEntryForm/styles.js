@@ -27,6 +27,11 @@ const ProductPrice = styled.div`
     flex:1.5;
 `;
 
+const ProductBrand = styled.div`
+flex-basis: 100%;
+margin-bottom: 1.5rem;
+`;
+
 const ProductDescription = styled.div`
     textarea{
         resize: none;
@@ -39,4 +44,4 @@ const ProductDescription = styled.div`
 
 
 
-export {ProductDataEntryFormStyles, ProductImage, ProductName, ProductPrice, ProductDescription}
+export {ProductDataEntryFormStyles, ProductImage, ProductName, ProductPrice, ProductBrand, ProductDescription}

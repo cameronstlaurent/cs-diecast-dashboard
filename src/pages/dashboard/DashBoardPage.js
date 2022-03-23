@@ -5,7 +5,7 @@ import {onAuthStateChanged} from 'firebase/auth'
 import {auth} from 'libs/firebase'
 
 import {AppBar} from '../../components/appbar'
-import {SideBar} from '../../components/sidebar'
+import {SideBar} from 'components/sidebar'
 
 function DashBoardPage (props){
 const [isUser, setIsUser] = useState(false)

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import {ProductPreviewStyles, ProductImage, ProductName, ProductPrice, ProductDescription, ProductPreviewContent} from './styles';
+import {ProductPreviewStyles, ProductImage, ProductName, ProductPrice, ProductBrand, ProductDescription, ProductPreviewContent} from './styles';
 
 
-function ProductPreview ({children, productName, productPrice, productDescription, productImage, ...props})  {
+function ProductPreview ({children, productName, productPrice, productBrand, productDescription, productImage, ...props})  {
   return (
         <ProductPreviewStyles  {...props}>
            <ProductImage>
@@ -12,6 +12,7 @@ function ProductPreview ({children, productName, productPrice, productDescriptio
            <ProductPreviewContent>
            <ProductName>{productName}</ProductName>
            <ProductPrice>${productPrice}</ProductPrice>
+           <ProductBrand>{productBrand}</ProductBrand>
            <ProductDescription>{productDescription}</ProductDescription>
            </ProductPreviewContent>
         </ProductPreviewStyles>
