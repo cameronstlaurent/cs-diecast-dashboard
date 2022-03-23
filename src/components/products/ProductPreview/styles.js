@@ -7,7 +7,7 @@ const ProductPreviewStyles  = styled.aside`
      box-shadow:  0 0 2px 1px grey;
      width: 31rem;
      border-radius: 4px;
-     background-color: #e5e7eb;
+     background-color: #f3f4f6;
      h4 {
           font-size: 2.4rem;
           font-weight: 600;
