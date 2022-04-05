@@ -44,7 +44,8 @@ function AddProduct ({children, ...props})  {
     const productData = {
       productName,
       productPrice,
-      productDescription
+      productDescription,
+      productBrand
     }
     setIsWriting(true)
     productLoader(productData, productImage.file)

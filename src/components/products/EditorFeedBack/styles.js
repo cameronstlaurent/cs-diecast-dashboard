@@ -11,7 +11,7 @@ const EditorFeedBackStyles  = styled.aside`
 const FeedBackMessage = styled.figcaption`
     font-size: 1.75rem;
     font-weight: 600;
-    color: #a3e635;
+    color: #16a34a;
 `;
 
 const FeedBack = styled.figure`

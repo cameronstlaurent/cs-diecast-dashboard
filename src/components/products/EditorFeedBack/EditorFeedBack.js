@@ -18,14 +18,14 @@ function EditorFeedBack ({children, status, writeCompleted, ...props})  {
                !status
                ?
                 <FeedBack>
-                    <AiOutlineCheckCircle color="d9f99d" size="12rem"/>
+                    <AiOutlineCheckCircle color="16a34a" size="12rem"/>
                     <FeedBackMessage>
                         Product Uploaded Successfully
                     </FeedBackMessage>
                 </FeedBack>
            :
            <FeedBack>
-                <AiOutlineCloudUpload color="d9f99d" size="12rem"/>
+                <AiOutlineCloudUpload color="16a34a" size="12rem"/>
                 <FeedBackMessage>
                     Uploading New Product
                 </FeedBackMessage>
